@@ -13,6 +13,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>5.0.8.RELEASE</spring.version>
+		<junit.version>4.12</junit.version>
 	</properties>
 
 	<dependencies>
@@ -20,26 +22,26 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>3.2.3.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>3.2.3.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>3.2.3.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
+			<version>${junit.version}</version>
+			<!--<scope>test</scope>-->
 		</dependency>
 	</dependencies>
 	<build>
@@ -51,7 +53,7 @@
 					<source>1.8</source>
 					<target>1.8</target>
 					<encoding>UTF-8</encoding>
-					<verbal>true</verbal>
+					<!--<verbal>true</verbal>-->
 				</configuration>
 			</plugin>
 		</plugins>
