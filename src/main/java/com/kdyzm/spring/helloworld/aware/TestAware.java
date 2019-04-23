@@ -1,5 +1,6 @@
 package com.kdyzm.spring.helloworld.aware;
 
+import org.junit.Test;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
@@ -13,7 +14,6 @@ public class TestAware implements BeanFactoryAware {
 	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
 		this.beanFactory = beanFactory;
 	}
-	
 	public void testAware(){
 		
 		Hello bean = (Hello) beanFactory.getBean("hello");
